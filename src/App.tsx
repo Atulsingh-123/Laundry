@@ -25,7 +25,7 @@ function App() {
 
           <div className="flex-1 mt-16 p-4 w-[1025px]">
             <Routes>
-              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/" element={<Dashboard />} />
               <Route path="/orders" element={<OrderStatus />} />
             </Routes>
           </div>
