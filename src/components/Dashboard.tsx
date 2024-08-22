@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Pie } from "react-chartjs-2";
 import 'chart.js/auto';
 
@@ -25,13 +25,13 @@ const Dashboard = () => {
   const options = {
     plugins: {
       legend: {
-        position: 'top',
+        position: 'top' as const,
         labels: {
           usePointStyle: true,
           padding: 20,
           boxWidth: 10,
         },
-        align: 'start',
+        align: 'start' as const,
       },
     },
     layout: {
@@ -40,7 +40,6 @@ const Dashboard = () => {
       },
     },
   };
-
   return (
     <div className="flex-1 p-4">
       <h1 className="text-2xl font-semibold">Dashboard</h1>
